@@ -1,0 +1,118 @@
+.heroBanner {
+  padding: 7rem 0 6rem;
+  background: radial-gradient(circle at 75% 15%, rgba(148, 163, 184, 0.18), transparent 34%), linear-gradient(135deg, #090a0d 0%, #17191f 55%, #30343c 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.heroBanner h1 {
+  font-size: clamp(2.8rem, 8vw, 5.6rem);
+  letter-spacing: -0.05em;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  color: #cbd5e1;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  margin: 0 auto 2rem;
+  max-width: 42rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  padding: 5rem 0;
+}
+
+.intro {
+  max-width: 42rem;
+}
+
+.intro h2 {
+  margin-bottom: 0.75rem;
+}
+
+.intro p:last-child {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.05rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2.5rem 0 4rem;
+}
+
+.card {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+}
+
+.callout {
+  align-items: center;
+  background: linear-gradient(135deg, #252a33, #101216);
+  border: 1px solid #475569;
+  border-radius: 1rem;
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.callout h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.callout p {
+  color: #cbd5e1;
+  margin: 0;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 5rem 1.5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 3rem 0;
+  }
+
+  .callout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

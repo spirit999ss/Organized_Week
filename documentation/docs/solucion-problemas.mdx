@@ -1,0 +1,36 @@
+---
+sidebar_position: 10
+title: Solución de problemas
+---
+
+# Solución de problemas
+
+## No aparecen mis datos
+
+Comprueba que estás usando el mismo navegador y el mismo origen (dominio,
+puerto y protocolo). Organized Week no sincroniza datos entre orígenes,
+dispositivos o navegadores. Revisa también que no se hayan borrado los datos
+del sitio.
+
+## No puedo registrar un premio
+
+El registro solo está habilitado el domingo. Además, los minutos deben ser
+enteros positivos y no pueden superar el saldo disponible. Primero completa
+hábitos de lunes a sábado y verifica que exista una opción de premio.
+
+## No puedo crear otra meta
+
+El Vision Board admite nueve metas. Elimina una meta existente antes de añadir
+otra.
+
+## Una imagen no carga
+
+Comprueba que el archivo sea JPEG, PNG, WebP o GIF. Si la tarjeta indica que
+falta la imagen, su referencia existe en la meta pero el registro binario ya no
+está disponible en IndexedDB. Puedes quitarla y seleccionar otra.
+
+## El desarrollo local falla
+
+Usa una versión de Node.js compatible con el proyecto, instala dependencias
+desde la raíz y vuelve a ejecutar `npm run typecheck` o `npm run build`. Para
+la documentación, ejecuta esos comandos dentro de `documentation`.

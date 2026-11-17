@@ -1,0 +1,26 @@
+---
+sidebar_position: 7
+title: Gestión de imágenes del Vision Board
+---
+
+# Gestión de imágenes del Vision Board
+
+El selector de imágenes acepta archivos JPEG, PNG, WebP y GIF. La aplicación
+procesa el archivo en el navegador antes de guardarlo.
+
+## Flujo de una imagen
+
+1. Selecciona un archivo desde la tarjeta o el formulario de una meta.
+2. La aplicación lo procesa y muestra el estado de guardado.
+3. El contenido binario se guarda en IndexedDB.
+4. La meta conserva solamente el identificador de esa imagen.
+
+Al cambiar una imagen, se guarda la nueva y se elimina la anterior. Al quitar
+una imagen, la meta permanece disponible sin imagen. Al eliminar una meta,
+también se intenta eliminar su imagen asociada.
+
+Si una imagen no puede cargarse, la tarjeta informa del error o de que falta el
+registro. Esto no elimina automáticamente el resto de los datos de la meta.
+
+Para conocer la separación entre metadatos e imágenes, consulta
+[Almacenamiento con localStorage e IndexedDB](./almacenamiento).

@@ -1,0 +1,38 @@
+---
+sidebar_position: 11
+title: Despliegue en Vercel
+---
+
+# Despliegue en Vercel
+
+Vercel puede servir la aplicación Vite como contenido estático. Este proyecto
+no necesita variables de entorno, backend ni una base de datos remota.
+
+## Aplicación principal
+
+Al importar el repositorio en Vercel:
+
+1. Selecciona **Vite** si no se detecta automáticamente.
+2. Deja la raíz del proyecto en la raíz del repositorio.
+3. Usa `npm install` para instalar dependencias.
+4. Usa `npm run build` como comando de compilación.
+5. Usa `dist` como directorio de salida.
+
+También puedes usar la CLI de Vercel desde la raíz después de autenticarte:
+
+```bash
+vercel
+```
+
+## Este sitio de documentación
+
+Si despliegas solo Docusaurus, configura `documentation` como directorio raíz
+del proyecto en Vercel:
+
+- Instalación: `npm install`
+- Compilación: `npm run build`
+- Salida: `build`
+
+La aplicación principal y este sitio son proyectos separados. El despliegue no
+cambia dónde se guardan los datos de Organized Week: siguen siendo locales al
+navegador de cada visitante.

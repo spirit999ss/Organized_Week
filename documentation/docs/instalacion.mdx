@@ -1,0 +1,51 @@
+---
+sidebar_position: 2
+title: Instalación y ejecución local
+---
+
+# Instalación y ejecución local
+
+La aplicación principal usa Vite, React y TypeScript. Necesitas Node.js y npm.
+No se requiere ningún servicio externo.
+
+## Instalar y ejecutar
+
+Desde la raíz del repositorio:
+
+```bash
+npm install
+npm run dev
+```
+
+Vite muestra normalmente la aplicación en `http://localhost:5173`.
+
+## Comandos disponibles
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+npm run preview
+```
+
+- `lint` ejecuta ESLint.
+- `typecheck` comprueba los tipos de TypeScript.
+- `build` genera la compilación de producción en `dist`.
+- `preview` sirve localmente la compilación generada.
+
+## Ejecutar esta documentación
+
+La documentación es un proyecto Docusaurus independiente dentro de
+`documentation`:
+
+```bash
+cd documentation
+npm install
+npm run start
+```
+
+Para comprobar la compilación estática de la documentación:
+
+```bash
+npm run build
+```

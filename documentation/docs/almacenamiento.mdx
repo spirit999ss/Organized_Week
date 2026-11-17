@@ -1,0 +1,36 @@
+---
+sidebar_position: 8
+title: Almacenamiento con localStorage e IndexedDB
+---
+
+# Almacenamiento con localStorage e IndexedDB
+
+Organized Week usa dos mecanismos del navegador:
+
+## localStorage
+
+Guarda datos serializables de la aplicación:
+
+| Información | Clave |
+| --- | --- |
+| Tareas por fecha | `Organized_Week-tasks` |
+| Progreso de hábitos | `Organized_Week-habits` |
+| Definiciones de hábitos | `Organized_Week-habit-definitions` |
+| Días recompensados | `Organized_Week-rewards` |
+| Consumos | `Organized_Week-consumptions` |
+| Opciones de premio | `Organized_Week-reward-options` |
+| Metas del Vision Board | `Organized_Week-vision-board` |
+| Versión del esquema | `Organized_Week-schema-version` |
+
+Al iniciar, la aplicación escribe la versión de esquema `1`. Los hooks de
+estado validan y normalizan estructuras básicas antes de usarlas.
+
+## IndexedDB
+
+La base de datos `Organized_Week-db`, versión `1`, contiene el almacén
+`vision-board-images`. Allí se guardan los `Blob` de las imágenes y sus
+metadatos. localStorage conserva el `imageId` que relaciona cada imagen con su
+meta.
+
+Ambos mecanismos son locales al navegador. No forman una base de datos remota
+ni proporcionan sincronización entre dispositivos.
