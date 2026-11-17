@@ -1,0 +1,9 @@
+export const TASKS_KEY = "Organized_Week-tasks";
+export const HABITS_KEY = "Organized_Week-habits";
+export const REWARDS_KEY = "Organized_Week-rewards";
+export const CONSUMPTIONS_KEY = "Organized_Week-consumptions";
+export const GOALS_KEY = "Organized_Week-vision-board";
+export const HABIT_DEFINITIONS_KEY = "Organized_Week-habit-definitions";
+export const REWARD_OPTIONS_KEY = "Organized_Week-reward-options";
+export const SCHEMA_VERSION_KEY = "Organized_Week-schema-version";
+export const SCHEMA_VERSION = "1";
